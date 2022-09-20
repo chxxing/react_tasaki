@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/react_tasaki/static/css/main.31d6cfe0.css",
+    "main.js": "/react_tasaki/static/js/main.579a7a5a.js",
+    "index.html": "/react_tasaki/index.html",
+    "main.579a7a5a.js.map": "/react_tasaki/static/js/main.579a7a5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.579a7a5a.js"
+  ]
+}
