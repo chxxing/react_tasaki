@@ -1,0 +1,92 @@
+/* * {
+    outline: 1px solid blue;
+} */
+
+.Header {}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.Header .container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+.Header h1 {
+    font-size: 0px;
+}
+
+.Header .menuIcon {
+    display: flex;
+    gap: 10px;
+}
+
+.Header .menuIcon i {
+    font-size: 17px;
+}
+
+.Header .Gnb {
+    border-top: 1px solid #e3f0ea;
+}
+
+.Header .Gnb .menu {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.Header .Gnb .menu>li {
+    position: relative;
+    font-weight: 500;
+}
+
+.Header .Gnb .menu a {
+    display: block;
+}
+
+.Header .Gnb .menu>li .submenu {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+    z-index: 999;
+}
+
+.Header .Gnb .menu>li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.MainVisual figure {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.MainVisual .itm01 {
+    background-image: url(/public/assets/images/mainvisual01.jpg);
+}
+
+.MainVisual .itm02 {
+    background-image: url(/public/assets/images/mainvisual02.jpg);
+}
+
+.MainVisual .itm03 {
+    background-image: url(/public/assets/images/mainvisual03.jpg);
+}
