@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/react_tasaki/static/css/main.31d6cfe0.css",
-    "main.js": "/react_tasaki/static/js/main.579a7a5a.js",
+    "main.css": "/react_tasaki/static/css/main.8998d433.css",
+    "main.js": "/react_tasaki/static/js/main.65a9039d.js",
     "index.html": "/react_tasaki/index.html",
-    "main.579a7a5a.js.map": "/react_tasaki/static/js/main.579a7a5a.js.map"
+    "main.8998d433.css.map": "/react_tasaki/static/css/main.8998d433.css.map",
+    "main.65a9039d.js.map": "/react_tasaki/static/js/main.65a9039d.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.579a7a5a.js"
+    "static/css/main.8998d433.css",
+    "static/js/main.65a9039d.js"
   ]
 }
