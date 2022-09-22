@@ -184,3 +184,9 @@ textarea {
 .row:after {
     clear: both;
 }
+
+/* slick 슬라이드 깜빡임 */
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}

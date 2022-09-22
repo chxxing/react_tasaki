@@ -49,13 +49,37 @@
     display: block;
 }
 
-.Header .Gnb .menu>li .submenu {
+.Header .Gnb .menu>li>a {
+    position: relative;
+}
+
+.Header .Gnb .menu>li>a::after {
+    content: "";
     position: absolute;
-    top: 50px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 350px;
-    height: 500px;
+    width: 0%;
+    height: 3px;
+    background: #e3f0ea;
+    transition: 0.3s;
+}
+
+.Header .Gnb .menu>li>a:hover::after {
+    width: 100%;
+}
+
+.Header .Gnb .submenu {
+    border: 1px solid #e3f0ea;
+}
+
+.Header .Gnb .menu>li .submenu {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    padding: 10px 0;
     background: #fff;
     text-align: center;
     font-size: 15px;
@@ -63,7 +87,7 @@
     line-height: 30px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s;
+    transition: opacity 0.3s;
     z-index: 999;
 }
 
@@ -72,8 +96,17 @@
     visibility: visible;
 }
 
+.Header .Gnb .submenu a:hover {
+    font-weight: 600;
+}
+
+.MainVisual {
+    position: relative;
+}
+
 .MainVisual figure {
-    height: 800px;
+    position: relative;
+    height: calc(100vh - 122px);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -89,4 +122,207 @@
 
 .MainVisual .itm03 {
     background-image: url(/public/assets/images/mainvisual03.jpg);
+}
+
+.MainVisual .itm03 .inner {
+    color: #555;
+    text-shadow: 0 0 1px #fff;
+}
+
+.MainVisual .itm03 .inner a {
+    border: 1px solid #555;
+}
+
+.MainVisual .inner {
+    position: absolute;
+    top: 50%;
+    right: calc((100% - 1200px) / 2);
+    transform: translateY(-50%);
+    text-align: right;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.MainVisual .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.MainVisual .inner p {
+    font-size: 19px;
+    margin: 0 0 40px 0;
+    line-height: 1.35;
+    white-space: pre-line;
+}
+
+.MainVisual .inner .more {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 8px 15px 8px 20px;
+    border: 1px solid #ddd;
+}
+
+.MainVisual .inner .more i {
+    font-size: 14px;
+}
+
+.MainVisual .slideArrows button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 12px;
+    font-size: 70px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.MainVisual .slideArrows button:first-child {
+    margin: 0 0 0 -900px;
+}
+
+.MainVisual .slideArrows button:last-child {
+    margin: 0 0 0 900px;
+}
+
+.Discover {
+    padding: 100px 0;
+}
+
+.Discover h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.Discover .SubSlider img {
+    position: relative;
+    border: 1px solid #f1f1f1;
+    margin: 0 0 30px 0;
+}
+
+.Discover .SubSlider .tit {
+    text-align: center;
+    min-height: 60px;
+}
+
+.Discover .SubSlider .tit p {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.Discover .SubSlider .tit i {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    vertical-align: 0.2em;
+}
+
+.Discover .dots {
+    display: flex;
+    gap: 10px;
+    font-size: 0;
+    justify-content: center;
+}
+
+.Discover .dots>li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Discover .dots li.on {
+    background: #e3f0ea;
+    transition: 0.1s;
+}
+
+.About {
+    padding: 100px 0;
+    background: url(../../public/assets/images/bg.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+}
+
+.About h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.About p {
+    font-size: 15px;
+    margin: 0 0 40px 0;
+    line-height: 1.35;
+}
+
+.About a {
+    font-size: 15px;
+    padding: 8px 15px 8px 20px;
+    border: 1px solid #555;
+}
+
+.About i {
+    font-size: 12px;
+}
+
+
+
+
+.Footer {
+    background: #e3f0ea;
+}
+
+.Footer .top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .top {
+    line-height: 70px;
+    border-bottom: 1px solid #fff;
+}
+
+.Footer .Fnb {
+    display: flex;
+    font-size: 13px;
+}
+
+.Footer .Fnb>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 20px;
+    background: #ccc;
+}
+
+.Footer .sns i {
+    font-size: 17px;
+    margin: 0 0 0 20px;
+}
+
+.Footer .bottom {
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.Footer .bottom ul {
+    display: flex;
+}
+
+.Footer .bottom ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 20px;
+    background: #ccc;
 }
