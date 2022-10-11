@@ -1,19 +1,22 @@
+import { Route, Routes } from 'react-router-dom';
+import './css/App.css';
+import { MENUDATA } from './data/common';
 import Header from './component/Header';
-import MainVisual from './component/MainVisual';
+import Main from './pages/Main';
 import Discover from './component/Discover';
 import Footer from './component/Footer';
 import About from './component/About';
-import './css/App.css';
 
 function App() {
   return (
     <div className="Wrapper">
-      <Header />
-      <main>
-        <MainVisual />
-        <Discover />
-        <About />
-      </main>
+      <Header content={MENUDATA} />
+      <Routes>
+        <Route path='/' element={<Main />}>
+        </Route>
+      </Routes>
+      <Discover />
+      <About />
       <Footer />
     </div>
   );

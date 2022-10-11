@@ -1,0 +1,71 @@
+@use 'common';
+
+.Header {
+    .container {
+        justify-content: space-between;
+        line-height: 80px;
+
+        h1 {
+            font-size: 0px;
+        }
+
+        .leftMenu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .rightMenu {
+            display: flex;
+
+            li {
+                font-size: 15px;
+
+                &:first-child {
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 1px;
+                        height: 10px;
+                        margin: 0 15px;
+                        background: #ddd;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        border-top: 1px solid common.$mColor;
+
+        .Gnb {
+            display: flex;
+            justify-content: space-between;
+            line-height: 50px;
+
+            li {
+                font-weight: 500;
+
+                a {
+                    position: relative;
+                    display: block;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0%;
+                        height: 3px;
+                        background: #e3f0ea;
+                        transition: 0.3s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

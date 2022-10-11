@@ -1,30 +1,34 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
+import { BsCart, BsSearch, BsGeoAlt, BsPerson, BsHeart } from "react-icons/bs";
 import Language from './Language';
-import Menu from './Menu';
+import Nav from './Nav';
+import '../css/Header.scss';
 
-const Header = () => {
+const Header = ({ content }) => {
     return (
         <header className='Header'>
             <div className="container">
-                <div className="menuIcon">
-                    <a href="#!"><i className="bi-search"></i></a>
-                    <a href="#!"><i className="bi-geo-alt"></i></a>
-                    <a href="#!"><i className="bi-person"></i></a>
-                    <a href="#!"><i className="bi-heart"></i></a>
-                    <a href="#!"><i className="bi-cart"></i></a>
-                </div>
+                <ul className="leftMenu">
+                    <li><Link to='/'><BsSearch /></Link></li>
+                    <li><Link to='/'><BsGeoAlt /></Link></li>
+                    <li><Link to='/'><BsPerson /></Link></li>
+                    <li><Link to='/'><BsHeart /></Link></li>
+                    <li><Link to='/'><BsCart /></Link></li>
+                </ul>
                 <h1>
-                    <a href="./">
+                    <Link to='/'>
                         <img src={process.env.PUBLIC_URL + '/assets/images/logo.png'} alt="" />
-                    </a>
+                    </Link>
                 </h1>
-                <div className="language">
-                    <Language />
-                </div>
+                <ul className="rightMenu">
+                    <li><Link to='/'>문의하기</Link></li>
+                    <li><Language /></li>
+                </ul>
             </div>
-            <Menu />
+            <nav>
+                <Nav navcon={content} />
+            </nav>
         </header>
-
     )
 }
 

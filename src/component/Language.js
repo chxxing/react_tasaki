@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 
 const LANGUAGE = [
-    { id: 0, name: "대한민국", link: "" },
-    { id: 1, name: "日本", link: "https://www.tasaki.co.jp/" },
-    { id: 2, name: "中國", link: "https://www.tasaki.com.cn/" },
+    { id: 0, name: "한국/한국어", link: "/" },
+    { id: 1, name: "日本語", link: "https://www.tasaki.co.jp/" },
+    { id: 2, name: "繁体中文", link: "https://www.tasaki.com.cn/" },
     { id: 3, name: "ENGLISH", link: "https://www.tasaki-global.com/" }
 ]
 
 const Select = styled.select`
-    border: 1px solid #e3f0ea;
+    border: none;
     background: transparent;
     font-size: 15px;
-    padding: 5px 10px;
+    padding: 5px 0;
 `
 
 const Language = () => {
