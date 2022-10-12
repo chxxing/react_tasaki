@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import company from '../data/profile';
+import '../css/Footer.scss';
 
 const FOOTER = [
     { id: 1, title: "사이트맵", link: "/" },
@@ -10,9 +11,9 @@ const FOOTER = [
     { id: 5, title: "브라우저 요구사항", link: "/" }
 ]
 const SNS = [
-    { id: 1, icon: "BsFacebook", link: "https://www.facebook.com/TASAKI.KOREA" },
-    { id: 2, icon: "BsInstagram", link: "https://www.instagram.com/tasaki_intl/" },
-    { id: 3, icon: "BsYoutube", link: "https://www.youtube.com/user/TASAKIJAPAN" }
+    { id: 1, icon: <BsFacebook />, link: "https://www.facebook.com/TASAKI.KOREA" },
+    { id: 2, icon: <BsInstagram />, link: "https://www.instagram.com/tasaki_intl/" },
+    { id: 3, icon: <BsYoutube />, link: "https://www.youtube.com/user/TASAKIJAPAN" }
 ]
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
                             SNS.map(it => {
                                 return (
                                     <li key={it.id}>
-                                        <Link to={it.link}><{it.icon} /></Link>
+                                        <Link to={it.link}>{it.icon}</Link>
                                     </li>
                                 )
                             })
@@ -48,13 +49,13 @@ const Footer = () => {
                 <div className="container">
                     <ul>
                         <li>
-                            <Link to='/'>{company.copyright}</Link>
-                        </li>
-                        <li>
                             <Link to='/'>{company.number}</Link>
                         </li>
                         <li>
                             <Link to='javascript:void(0)' onClick={() => window.location = 'mailto:tasakiinfo@tasaki.co.kr'}>{company.mail}</Link>
+                        </li>
+                        <li>
+                            <Link to='/'>{company.copyright}</Link>
                         </li>
                     </ul>
                 </div>

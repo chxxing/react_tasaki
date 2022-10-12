@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
+import { BsChevronDown } from "react-icons/bs";
 
 const LANGUAGE = [
     { id: 0, name: "한국/한국어", link: "/" },
@@ -8,11 +9,25 @@ const LANGUAGE = [
     { id: 3, name: "ENGLISH", link: "https://www.tasaki-global.com/" }
 ]
 
+const SelectBox = styled.div`
+    position: relative;
+    width: 110px;
+`
+
 const Select = styled.select`
-    border: none;
+    width: inherit;
+    height: inherit;
     background: transparent;
-    font-size: 15px;
-    padding: 5px 0;
+    border: none;
+    padding: 5px 0px 5px 15px;
+    appearance: none;
+    cursor: pointer;
+`
+const Span = styled.span`
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 13px;
 `
 
 const Language = () => {
@@ -23,11 +38,14 @@ const Language = () => {
     }, [lnk])
 
     return (
-        <Select onChange={(e) => setLnk(e.target.value)}>
-            {
-                LANGUAGE.map(link => <option value={link.link} key={link.id}>{link.name}</option>)
-            }
-        </Select>
+        <SelectBox>
+            <Select onChange={(e) => setLnk(e.target.value)}>
+                {
+                    LANGUAGE.map(link => <option value={link.link} key={link.id}>{link.name}</option>)
+                }
+            </Select>
+            <Span><BsChevronDown /></Span>
+        </SelectBox>
     )
 }
 

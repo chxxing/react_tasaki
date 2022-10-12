@@ -26,8 +26,8 @@
                         display: inline-block;
                         width: 1px;
                         height: 10px;
-                        margin: 0 15px;
-                        background: #ddd;
+                        margin: 0 0 0 15px;
+                        background: common.$gColor;
                     }
                 }
             }
@@ -57,7 +57,7 @@
                         transform: translateX(-50%);
                         width: 0%;
                         height: 3px;
-                        background: #e3f0ea;
+                        background: common.$mColor;
                         transition: 0.3s;
                     }
 

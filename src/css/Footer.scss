@@ -1,0 +1,59 @@
+@use 'common';
+
+.Footer {
+    background: common.$mColor;
+
+    .top {
+        line-height: 60px;
+        border-bottom: 1px solid common.$wColor;
+
+        .container {
+            justify-content: space-between;
+
+            .Fnb {
+                display: flex;
+                font-size: 13px;
+
+                li~li::before {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 10px;
+                    margin: 0 20px;
+                    background: common.$gColor;
+                }
+            }
+
+            .sns {
+                li {
+                    display: inline;
+                    font-size: 17px;
+                    vertical-align: middle;
+                    padding: 10px 10px 5px;
+                    margin: 0 0 0 10px;
+                    border: 1px solid common.$wColor;
+                    border-radius: 10px;
+                    color: common.$dColor;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        line-height: 60px;
+        font-size: 13px;
+
+        ul {
+            display: flex;
+
+            li~li::before {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 10px;
+                margin: 0 20px;
+                background: common.$gColor;
+            }
+        }
+    }
+}

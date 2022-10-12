@@ -1,7 +1,8 @@
 $mColor: #e3f0ea;
 $wColor: #ffffff;
 $dColor: #555555;
-$gColor: #dddddd;
+$gColor: #cccccc;
+$lColor: #dee2e6;
 
 .container {
     width: 1170px;
@@ -12,4 +13,33 @@ $gColor: #dddddd;
 .inner {
     width: 1170px;
     margin: 0 auto;
+}
+
+.sec {
+    padding: 100px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin: 0 0 20px 0;
+    }
+
+    .desc {
+        font-size: 15px;
+        margin: 0 0 45px 0;
+        line-height: 1.4;
+    }
+}
+
+.more {
+    font-size: 15px;
+    padding: 8px 15px 8px 21px;
+    border: 1px solid rgba($dColor, $alpha: 0.6);
+
+    .icon {
+        font-size: 12px;
+        vertical-align: middle;
+    }
 }

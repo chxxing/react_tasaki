@@ -1,62 +1,41 @@
-import { useRef, useState } from 'react';
-import SubSlider from 'react-slick';
+import { Link } from 'react-router-dom';
+import { MENUDATA } from '../data/common';
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
-
-const PRODUCT = [
-    { id: 1, title: "M/G TASAKI", link: "#!" },
-    { id: 2, title: "BRIDAL", link: "#!" },
-    { id: 3, title: "TASAKI Atelier", link: "#!" },
-    { id: 4, title: "TIMEPIECES", link: "#!" },
-    { id: 5, title: "ARMORY", link: "#!" },
-    { id: 6, title: "BALANCE", link: "#!" }
-]
+import { useRef } from 'react';
 
 const Discover = () => {
-    const [slideNum, setSlideNum] = useState(0);
-    const SLIDE = useRef(null);
+    const Dsc = useRef(null);
     return (
-        <section className="Discover">
-            <div className="container">
-                <h2>DISCOVER</h2>
-                <SubSlider className={'SubSlider'}
-                    centerMode={true}
-                    centerPadding={'80px'}
-                    afterChange={index => setSlideNum(index)}
+        <section className="Discover sec">
+            <h2>DISCOVER</h2>
+            <div className="inner">
+                <Slider
+                    className={'DscSlider'}
+                    ref={Dsc}
                     arrows={false}
+                    dots={true}
                     slidesToShow={2}
-                    slidesToScroll={1}
-                    ref={SLIDE}
                 >
                     {
-                        PRODUCT.map((con, idx) => {
+                        MENUDATA.slice(0, 5).map((it, idx) => {
                             return (
-                                <figuer key={con.id}>
-                                    <a href={con.link}>
-                                        <img src={process.env.PUBLIC_URL + "/assets/images/discover0" + con.id + ".jpg"} alt="" />
-                                    </a>
-                                    <div className="tit">
-                                        <a href={con.link}>
-                                            <p>{con.title}<i className="bi-chevron-right"></i></p>
-                                        </a>
-                                    </div>
-                                </figuer>
+                                <Link to={it.link} key={it.id}>
+                                    <figure className={`itm itm0${idx + 1}`}>
+                                        <div className="tit">
+                                            <p>{it.title}</p>
+                                        </div>
+                                    </figure>
+                                </Link>
                             )
                         })
                     }
-                </SubSlider>
-                {/* <div className="box">
-                    <div className="tit">{PRODUCT[slideNum].title}</div>
-                    <a href={PRODUCT[slideNum].link}>more <i className="bi-chevron-right"></i></a>
-                </div> */}
-                <ul className="dots">
-                    {
-                        PRODUCT.map((dot, idx) => <li
-                            key={dot.id}
-                            onClick={() => SLIDE.current.slickGoTo(idx)}
-                            className={slideNum === idx ? 'on' : ''}>
-                            {dot.id}</li>)
-                    }
-                </ul>
+                </Slider>
+                <div>
+                    <BsChevronLeft onClick={() => Dsc.current.slickPrev()} className="arrow" />
+                    <BsChevronRight onClick={() => Dsc.current.slickNext()} className="arrow" />
+                </div>
             </div>
         </section >
     )

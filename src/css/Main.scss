@@ -1,0 +1,139 @@
+@use 'common';
+
+.Discover {
+    position: relative;
+
+    h2 {
+        margin: 0 0 30px 0;
+    }
+
+    .inner {
+        width: 1180px;
+    }
+
+    .DscSlider {
+        position: relative;
+
+        .slick-slide {
+            padding: 0 5px;
+            min-height: 360px;
+        }
+
+        .itm {
+            position: relative;
+            height: 276px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            &.itm01 {
+                background-image: url(../../public/assets/images/discover01.jpg);
+            }
+
+            &.itm02 {
+                background-image: url(../../public/assets/images/discover02.jpg);
+            }
+
+            &.itm03 {
+                background-image: url(../../public/assets/images/discover03.jpg);
+            }
+
+            &.itm04 {
+                background-image: url(../../public/assets/images/discover04.jpg);
+            }
+
+            &.itm05 {
+                background-image: url(../../public/assets/images/discover05.jpg);
+            }
+
+            .tit {
+                position: absolute;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin: 0 5px;
+
+                button {
+                    width: 15px;
+                    height: 15px;
+                    font-size: 0;
+                    border: 1px solid common.$lColor;
+                    border-radius: 50%;
+                    background: transparent;
+                    cursor: pointer;
+                }
+
+                &.slick-active button {
+                    background: common.$mColor;
+                }
+            }
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: common.$gColor;
+        cursor: pointer;
+
+        &:first-child {
+            margin: 0 0 0 -630px;
+        }
+
+        &:last-child {
+            margin: 0 0 0 630px;
+        }
+    }
+}
+
+.About {
+    background: url(../../public/assets/images/bg.jpg) no-repeat fixed center center/cover;
+}
+
+.News {
+    h2 {
+        margin: 0 0 30px 0;
+    }
+
+    .container {
+        text-align: left;
+        gap: 10px;
+
+        figure {
+            img {
+                margin: 0 0 20px 0;
+            }
+
+            span {
+                display: block;
+                font-size: 13px;
+                margin: 0 0 15px 0;
+            }
+
+            .tit {
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}

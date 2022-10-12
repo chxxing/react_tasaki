@@ -10,7 +10,7 @@ const Header = ({ content }) => {
             <div className="container">
                 <ul className="leftMenu">
                     <li><Link to='/'><BsSearch /></Link></li>
-                    <li><Link to='/'><BsGeoAlt /></Link></li>
+                    <li><Link to='/stores'><BsGeoAlt /></Link></li>
                     <li><Link to='/'><BsPerson /></Link></li>
                     <li><Link to='/'><BsHeart /></Link></li>
                     <li><Link to='/'><BsCart /></Link></li>
@@ -21,7 +21,7 @@ const Header = ({ content }) => {
                     </Link>
                 </h1>
                 <ul className="rightMenu">
-                    <li><Link to='/'>문의하기</Link></li>
+                    <li><Link to='/board'>문의하기</Link></li>
                     <li><Language /></li>
                 </ul>
             </div>
