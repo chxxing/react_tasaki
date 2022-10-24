@@ -3,13 +3,13 @@ import Discover from "../component/Discover";
 import About from '../component/About';
 import News from "../component/News";
 
-const Main = ({ content }) => {
+const Main = ({ content, slidetxt, news }) => {
     return (
         <main>
-            <MainVisual />
+            <MainVisual slidetxt={slidetxt} />
             <Discover />
             <About content={content} />
-            <News />
+            <News news={news} />
         </main>
     )
 }

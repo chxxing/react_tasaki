@@ -1,10 +1,15 @@
-import React from 'react'
+import '../css/Pages.scss';
+import { BsChevronRight } from "react-icons/bs";
 
 const Board = () => {
     return (
-        <div>
-            Board
-        </div>
+        <section className='Board psc'>
+            <div className="nav_bar">
+                <div className="inner">
+                    <span>홈<BsChevronRight /> Board</span>
+                </div>
+            </div>
+        </section>
     )
 }
 

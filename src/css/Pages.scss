@@ -1,0 +1,87 @@
+@use 'common';
+
+.nav_bar {
+    border-bottom: 1px solid common.$mColor;
+
+    .inner {
+        line-height: 2rem;
+
+        span {
+            font-size: 13.5px;
+
+            svg {
+                margin: 0 5px;
+                vertical-align: -0.1em;
+            }
+        }
+    }
+}
+
+.New {
+    figure {
+        background: url(../../public/assets/images/new_bg.jpg) no-repeat center center/cover;
+    }
+}
+
+.Jewellery {
+    figure {
+        background: url(../../public/assets/images/jewellery_bg.jpg) no-repeat center center/cover;
+
+        h2 {
+            color: common.$wColor;
+            text-shadow: 0 0 1px common.$dColor;
+        }
+    }
+}
+
+.Bridal {
+    figure {
+        background: url(../../public/assets/images/bridal_bg.jpg) no-repeat center center/cover;
+    }
+}
+
+.Time {
+    figure {
+        background: url(../../public/assets/images/time_bg.jpg) no-repeat center center/cover;
+
+        h2 {
+            color: common.$wColor;
+            text-shadow: 0 0 1px common.$dColor;
+        }
+    }
+}
+
+.Others {
+    figure {
+        background: url(../../public/assets/images/others_bg.jpg) no-repeat center center/cover;
+
+        h2 {
+            color: common.$wColor;
+            text-shadow: 0 0 1px common.$dColor;
+        }
+    }
+}
+
+.Company {
+    figure {
+        background: url(../../public/assets/images/about_bg.jpg) no-repeat center center/cover;
+    }
+}
+
+.Newslist {
+    figure {
+        background: common.$mColor;
+    }
+}
+
+.Stores {
+    figure {
+        background: url(../../public/assets/images/stores_bg.jpg) no-repeat center center/cover;
+    }
+
+    .st_tab {
+        li.on {
+            color: red;
+        }
+    }
+}

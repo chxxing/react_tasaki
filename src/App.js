@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { MENUDATA } from './data/common';
+import { MENUDATA, MAINSLIDER, NEWS, FOOTER, SNS } from './data/common';
+import { STORES } from './data/pages';
 import Header from './component/Header';
 import Main from './pages/Main';
 import Footer from './component/Footer';
@@ -19,18 +20,18 @@ const App = () => {
     <div className="Wrapper">
       <Header content={MENUDATA} />
       <Routes>
-        <Route path='/' element={<Main content={MENUDATA} />} />
-        <Route path='/newarrival' element={<NewArrival />} />
-        <Route path='/jewellery' element={<Jewellery />} />
-        <Route path='/bridal' element={<Bridal />} />
-        <Route path='/timepieces' element={<Timepieces />} />
-        <Route path='/others' element={<Others />} />
-        <Route path='/about' element={<Company />} />
-        <Route path='/news' element={<NewsList />} />
-        <Route path='/stores' element={<Stores />} />
+        <Route path='/' element={<Main slidetxt={MAINSLIDER} content={MENUDATA} news={NEWS} />} />
+        <Route path='/newarrival' element={<NewArrival content={MENUDATA} />} />
+        <Route path='/jewellery' element={<Jewellery content={MENUDATA} />} />
+        <Route path='/bridal' element={<Bridal content={MENUDATA} />} />
+        <Route path='/timepieces' element={<Timepieces content={MENUDATA} />} />
+        <Route path='/others' element={<Others content={MENUDATA} />} />
+        <Route path='/about' element={<Company content={MENUDATA} />} />
+        <Route path='/news' element={<NewsList content={MENUDATA} />} />
+        <Route path='/stores' element={<Stores content={MENUDATA} store={STORES} />} />
         <Route path='/board' element={<Board />} />
       </Routes>
-      <Footer />
+      <Footer content={FOOTER} sns={SNS} />
     </div>
   );
 }

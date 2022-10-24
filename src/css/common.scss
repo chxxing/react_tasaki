@@ -43,3 +43,19 @@ $lColor: #dee2e6;
         vertical-align: middle;
     }
 }
+
+.psc {
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            font-family: 'Noto Serif KR';
+            letter-spacing: 0.1em;
+        }
+    }
+}

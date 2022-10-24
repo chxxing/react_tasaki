@@ -1,11 +1,19 @@
-import React from 'react'
+import '../css/Pages.scss';
+import { BsChevronRight } from "react-icons/bs";
 
-const others = () => {
+const Others = ({ content }) => {
     return (
-        <div>
-            others
-        </div>
+        <section className='Others psc'>
+            <figure>
+                <h2>{content[4].title}</h2>
+            </figure>
+            <div className="nav_bar">
+                <div className="inner">
+                    <span>홈<BsChevronRight />{content[4].title}</span>
+                </div>
+            </div>
+        </section>
     )
 }
 
-export default others
+export default Others;

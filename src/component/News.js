@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
 
-const NEWS = [
-    { id: 1, title: "TASAKI 새로운 글로벌 광고 캠페인", date: "2022.06.23", link: "/news" },
-    { id: 2, title: "TASAKI, 모나코 호텔 드 파리 몬테카를로에 1호점 오픈", date: "2021.06.01", link: "/news" },
-    { id: 3, title: "모조품에 관한 당사의 입장", date: "2018.05.09", link: "/news" }
-]
-
-const News = () => {
+const News = ({ news }) => {
     return (
         <section className='News sec'>
             <h2>NEWS</h2>
             <div className="container">
                 {
-                    NEWS.map(it => {
+                    news.map(it => {
                         return (
                             <figure>
                                 <Link to={it.link}>

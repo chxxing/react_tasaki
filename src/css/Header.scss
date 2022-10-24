@@ -7,6 +7,7 @@
 
         h1 {
             font-size: 0px;
+            margin: 0 0 0 57px;
         }
 
         .leftMenu {
@@ -36,6 +37,7 @@
 
     nav {
         border-top: 1px solid common.$mColor;
+        border-bottom: 1px solid common.$mColor;
 
         .Gnb {
             display: flex;
