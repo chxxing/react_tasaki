@@ -37,18 +37,29 @@ const STORES = [
     },
     {
         id: 3, area: "대구",
-        name:
-            ["현대백화점 대구점"],
-        address:
-            ["대구광역시 중구 계산동 2가 200 현대백화점 대구점 2층"],
+        name: ["현대백화점 대구점",],
+        address: ["대구광역시 중구 계산동 2가 200 현대백화점 대구점 2층",]
     },
     {
         id: 4, area: "부산",
-        name:
-            ["에비뉴엘 부산 본점",],
-        address:
-            ["부산 광역시 부산진구 가야대로 772 롯데 백화점 부산 본점 에비뉴엘 1층",],
+        name: ["에비뉴엘 부산본점",],
+        address: ["부산 광역시 부산진구 가야대로 772 롯데 백화점 부산 본점 에비뉴엘 1층",]
     }
 ]
 
-export { STORES };
+const NEWARRIVAL = [
+    { id: 1, name: "danger signature", src: "/assets/images/new_img01.jpg" },
+    { id: 2, name: "danger tribe", src: "/assets/images/new_img02.jpg" },
+    { id: 3, name: "danger fang", src: "/assets/images/new_img03.jpg" },
+    { id: 4, name: "danger scorpion", src: "/assets/images/new_img04.jpg" },
+    { id: 5, name: "danger plus", src: "/assets/images/new_img05.jpg" },
+    { id: 6, name: "danger", src: "/assets/images/new_img06.jpg" },
+    { id: 7, name: "danger trap", src: "/assets/images/new_img07.jpg" },
+    { id: 8, name: "danger fringe", src: "/assets/images/new_img08.jpg" },
+    { id: 9, name: "danger spike", src: "/assets/images/new_img09.jpg" },
+    { id: 10, name: "danger neo", src: "/assets/images/new_img010.jpg" },
+    { id: 11, name: "danger diamonds", src: "/assets/images/new_img011.jpg" },
+    { id: 12, name: "danger gulper", src: "/assets/images/new_img012.jpg" }
+];
+
+export { STORES, NEWARRIVAL };

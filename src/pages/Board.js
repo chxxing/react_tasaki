@@ -6,7 +6,7 @@ const Board = () => {
         <section className='Board psc'>
             <div className="nav_bar">
                 <div className="inner">
-                    <span>홈<BsChevronRight /> Board</span>
+                    <span>홈<BsChevronRight /> QnA</span>
                 </div>
             </div>
         </section>

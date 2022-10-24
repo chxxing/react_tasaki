@@ -1,7 +1,10 @@
 @use 'common';
 
 .nav_bar {
-    border-bottom: 1px solid common.$mColor;
+    background: common.$sgColor;
+    text-align: right;
+    border-top: 1px solid common.$lColor;
+    border-bottom: 1px solid common.$lColor;
 
     .inner {
         line-height: 2rem;
@@ -17,14 +20,18 @@
     }
 }
 
+.mainPage {
+    padding: 60px 0 0 0;
+}
+
 .New {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/new_bg.jpg) no-repeat center center/cover;
     }
 }
 
 .Jewellery {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/jewellery_bg.jpg) no-repeat center center/cover;
 
         h2 {
@@ -35,13 +42,13 @@
 }
 
 .Bridal {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/bridal_bg.jpg) no-repeat center center/cover;
     }
 }
 
 .Time {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/time_bg.jpg) no-repeat center center/cover;
 
         h2 {
@@ -52,7 +59,7 @@
 }
 
 .Others {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/others_bg.jpg) no-repeat center center/cover;
 
         h2 {
@@ -63,25 +70,114 @@
 }
 
 .Company {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/about_bg.jpg) no-repeat center center/cover;
     }
 }
 
 .Newslist {
-    figure {
+    .bgimg {
         background: common.$mColor;
     }
 }
 
 .Stores {
-    figure {
+    .bgimg {
         background: url(../../public/assets/images/stores_bg.jpg) no-repeat center center/cover;
     }
 
     .st_tab {
-        li.on {
-            color: red;
+        border-bottom: 1px solid common.$lColor;
+
+        .container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        li {
+            padding: 20px 129px;
+            font-size: 17px;
+            background: common.$sgColor;
+            border-right: 1px solid common.$lColor;
+            border-top: 1px solid common.$lColor;
+            cursor: pointer;
+
+            &:first-child {
+                border-left: 1px solid common.$lColor;
+            }
+
+            &.on {
+                position: relative;
+                background: common.$wColor;
+                border-bottom: 1px solid common.$wColor;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    bottom: -2px;
+                    left: 0;
+                    background: common.$wColor;
+                }
+            }
         }
     }
+
+    .mainPage {
+        strong {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 30px 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 5px;
+                height: 21px;
+                margin: 0 15px 0 0;
+                vertical-align: -0.2em;
+                background: common.$mColor;
+            }
+        }
+
+        .st_table {
+            width: 100%;
+            border-top: 3px solid common.$mColor;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            th {
+                padding: 20px;
+                text-align: left;
+            }
+        }
+    }
+
+
 }
+
+// .table {
+//     width: 100%;
+//     border-top: 3px solid var(--mc);
+//     border-collapse: collapse;
+//     border-spacing: 0;
+// }
+
+// .table td {
+//     padding: 15px 15px;
+//     border-left: 1px solid var(--gc);
+// }
+
+// .table th {
+//     padding: 15px 15px;
+//     text-align: left;
+//     background: var(--lc);
+//     font-weight: 400;
+
+// }
+
+// .table tr {
+//     border-bottom: 1px solid var(--gc);
+// }
