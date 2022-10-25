@@ -21,7 +21,7 @@ const Header = ({ content }) => {
                     </Link>
                 </h1>
                 <ul className="rightMenu">
-                    <li><Link to='/board'>문의하기</Link></li>
+                    <li><Link to='/'>문의하기</Link></li>
                     <li><Language /></li>
                 </ul>
             </div>

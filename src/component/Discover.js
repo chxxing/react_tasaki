@@ -19,7 +19,7 @@ const Discover = () => {
                     slidesToShow={2}
                 >
                     {
-                        MENUDATA.slice(0, 5).map((it, idx) => {
+                        MENUDATA.slice(0, 3).map((it, idx) => {
                             return (
                                 <Link to={it.link} key={it.id}>
                                     <figure className={`itm itm0${idx + 1}`}>

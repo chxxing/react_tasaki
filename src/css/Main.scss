@@ -119,8 +119,11 @@
         gap: 10px;
 
         figure {
+            flex: 33.3333%;
+
             img {
                 margin: 0 0 20px 0;
+                border: 1px solid common.$lColor;
             }
 
             span {

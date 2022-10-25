@@ -15,12 +15,6 @@ const MAINSLIDER = [
     { id: 3, title: "TASAKI Bridal", des: "TASAKI의 브라이덜 링 주얼리는 최고의 품질과 뛰어난 장인 정신을 자랑하며\n순수한 다이아몬드의 광택으로 영원한 사랑과 기쁨을 축복합니다", link: "/bridal" },
 ];
 
-const NEWS = [
-    { id: 1, title: "TASAKI 새로운 글로벌 광고 캠페인", date: "2022.06.23", link: "/news" },
-    { id: 2, title: "TASAKI, 모나코 호텔 드 파리 몬테카를로에 1호점 오픈", date: "2021.06.01", link: "/news" },
-    { id: 3, title: "모조품에 관한 당사의 입장", date: "2018.05.09", link: "/news" }
-];
-
 const FOOTER = [
     { id: 1, title: "사이트맵", link: "/" },
     { id: 2, title: "개인정보 처리방침", link: "/" },
@@ -35,4 +29,4 @@ const SNS = [
     { id: 3, icon: <BsYoutube />, link: "https://www.youtube.com/user/TASAKIJAPAN" }
 ];
 
-export { MENUDATA, MAINSLIDER, NEWS, FOOTER, SNS };
+export { MENUDATA, MAINSLIDER, FOOTER, SNS };

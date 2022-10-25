@@ -1,4 +1,3 @@
-import '../css/Pages.scss';
 import { BsChevronRight } from "react-icons/bs";
 
 const NewArrival = ({ content, itm }) => {
@@ -12,22 +11,24 @@ const NewArrival = ({ content, itm }) => {
             <div className='bgimg'>
                 <h2>{content[0].title}</h2>
             </div>
-            <div className="mainPage">
-                <div className="title">danger collection</div>
-                <figure>
-                    <a href="#!">
-                        {
-                            itm.map((it, idx) => {
-                                return (
-                                    <div className='box' key={it.id}>
-                                        <img src={process.env.PUBLIC_URL + it.src} alt="" />
+            <div className="secPage">
+                <p className="title">Danger Collection</p>
+                <div className="container">
+                    {
+                        itm.map((it, idx) => {
+                            return (
+                                <figure key={it.id}>
+                                    <a href="#!">
+                                        <div className='box'>
+                                            <img src={process.env.PUBLIC_URL + it.src} alt="" />
+                                        </div>
                                         <div className="name">{it.name}</div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </a>
-                </figure>
+                                    </a>
+                                </figure>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </section>
     )

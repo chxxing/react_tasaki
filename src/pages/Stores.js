@@ -1,4 +1,3 @@
-import '../css/Pages.scss';
 import { BsChevronRight } from "react-icons/bs";
 import { useState } from 'react';
 
@@ -37,23 +36,23 @@ const Stores = ({ content, store }) => {
                 <div className="inner mainPage">
                     <strong>{store[strtab].area}</strong>
                     <table className="st_table">
-                        <tbody>
+                        <thead>
                             <tr>
-                                {
-                                    store[strtab]?.name.map(it => {
-                                        return (
-                                            <th>{it}</th>
-                                        )
-                                    })
-                                }
-                                {
-                                    store[strtab]?.address.map(it => {
-                                        return (
-                                            <td>{it}</td>
-                                        )
-                                    })
-                                }
+                                <th>매장명</th>
+                                <th>주소</th>
                             </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                store[strtab].location?.map((it, idx) => {
+                                    return (
+                                        <tr>
+                                            <td key={idx}>{it.name}</td>
+                                            <td>{it.address}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
                         </tbody>
                     </table>
                 </div>
