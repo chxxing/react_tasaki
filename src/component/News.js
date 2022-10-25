@@ -8,7 +8,7 @@ const News = ({ news }) => {
                 {
                     news.slice(0, 3).map(it => {
                         return (
-                            <figure>
+                            <figure key={it.id}>
                                 <Link to='/news'>
                                     <img src={process.env.PUBLIC_URL + "/assets/images/news0" + it.id + ".jpg"} alt="" />
                                     <span>{it.date}</span>

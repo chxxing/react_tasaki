@@ -46,8 +46,8 @@ const Stores = ({ content, store }) => {
                             {
                                 store[strtab].location?.map((it, idx) => {
                                     return (
-                                        <tr>
-                                            <td key={idx}>{it.name}</td>
+                                        <tr key={idx}>
+                                            <td>{it.name}</td>
                                             <td>{it.address}</td>
                                         </tr>
                                     )
