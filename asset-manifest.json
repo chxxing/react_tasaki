@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/react_tasaki/static/css/main.c9bf762e.css",
-    "main.js": "/react_tasaki/static/js/main.2d84b081.js",
+    "main.css": "/react_tasaki/static/css/main.6a8db209.css",
+    "main.js": "/react_tasaki/static/js/main.ef5865b8.js",
     "static/media/mainvisual01.jpg": "/react_tasaki/static/media/mainvisual01.59ad50ebcb28b5c8e3e2.jpg",
-    "static/media/mainvisual03.jpg": "/react_tasaki/static/media/mainvisual03.9e3b3429dc77591c8231.jpg",
+    "static/media/mainvisual03.jpg": "/react_tasaki/static/media/mainvisual03.4c2224d702e71e359a5d.jpg",
     "static/media/mainvisual02.jpg": "/react_tasaki/static/media/mainvisual02.d610ba45bc7cf26e43b5.jpg",
+    "static/media/about_bg.jpg": "/react_tasaki/static/media/about_bg.21088da742048a107df0.jpg",
+    "static/media/new_bg.jpg": "/react_tasaki/static/media/new_bg.a69909ae78aeeb143adc.jpg",
+    "static/media/discover04.jpg": "/react_tasaki/static/media/discover04.48f71c2a1021ccec1ed3.jpg",
+    "static/media/jewellery_bg.jpg": "/react_tasaki/static/media/jewellery_bg.35417dbb9d7ebd146e3e.jpg",
+    "static/media/bridal_bg.jpg": "/react_tasaki/static/media/bridal_bg.48572ef407ef1056a2cd.jpg",
+    "static/media/stores_bg.jpg": "/react_tasaki/static/media/stores_bg.55a8c7a819707012da52.jpg",
+    "static/media/discover02.jpg": "/react_tasaki/static/media/discover02.f74bf9badfa53baf5e93.jpg",
+    "static/media/discover03.jpg": "/react_tasaki/static/media/discover03.27163e50ab4ae1e16441.jpg",
+    "static/media/discover01.jpg": "/react_tasaki/static/media/discover01.c3c1b56deee3ee946590.jpg",
     "static/media/bg.jpg": "/react_tasaki/static/media/bg.b152a639e702e05e8737.jpg",
+    "static/media/discover05.jpg": "/react_tasaki/static/media/discover05.3f99616b84c74d77da74.jpg",
     "index.html": "/react_tasaki/index.html",
-    "main.c9bf762e.css.map": "/react_tasaki/static/css/main.c9bf762e.css.map",
-    "main.2d84b081.js.map": "/react_tasaki/static/js/main.2d84b081.js.map"
+    "main.6a8db209.css.map": "/react_tasaki/static/css/main.6a8db209.css.map",
+    "main.ef5865b8.js.map": "/react_tasaki/static/js/main.ef5865b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9bf762e.css",
-    "static/js/main.2d84b081.js"
+    "static/css/main.6a8db209.css",
+    "static/js/main.ef5865b8.js"
   ]
 }
