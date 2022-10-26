@@ -5,6 +5,11 @@ $gColor: #cccccc;
 $lColor: #dee2e6;
 $sgColor: #f9f9f9;
 
+.Wrapper {
+    overflow: hidden;
+    min-width: 1900px;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
